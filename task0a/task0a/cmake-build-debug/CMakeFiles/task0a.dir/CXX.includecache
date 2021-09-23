@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ASUS/CLionProjects/cplusplus/task0a/main.cpp
+module1.h
+C:/Users/ASUS/CLionProjects/cplusplus/task0a/module1.h
+module2.h
+C:/Users/ASUS/CLionProjects/cplusplus/task0a/module2.h
+iostream
+-
+
+C:/Users/ASUS/CLionProjects/cplusplus/task0a/module1.cpp
+module1.h
+C:/Users/ASUS/CLionProjects/cplusplus/task0a/module1.h
+
+C:/Users/ASUS/CLionProjects/cplusplus/task0a/module1.h
+string
+-
+
+C:/Users/ASUS/CLionProjects/cplusplus/task0a/module2.cpp
+module2.h
+C:/Users/ASUS/CLionProjects/cplusplus/task0a/module2.h
+
+C:/Users/ASUS/CLionProjects/cplusplus/task0a/module2.h
+string
+-
+
