@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ASUS/CLionProjects/cplusplus/learn/variables.cpp
+C:/Users/ASUS/CLionProjects/cplusplus/learn/main.cpp
 iostream
+-
+vector
+-
+algorithm
+-
+fstream
+-
+string
 -
 

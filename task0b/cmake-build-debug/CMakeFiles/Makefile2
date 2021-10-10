@@ -62,10 +62,10 @@ RM = C:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ASUS\CLionProjects\sepC++\task0b
+CMAKE_SOURCE_DIR = C:\Users\ASUS\CLionProjects\cplusplus\task0b
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ASUS\CLionProjects\sepC++\task0b\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\ASUS\CLionProjects\cplusplus\task0b\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -92,14 +92,14 @@ clean: CMakeFiles/task0b.dir/clean
 CMakeFiles/task0b.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0b.dir\build.make CMakeFiles/task0b.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0b.dir\build.make CMakeFiles/task0b.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ASUS\CLionProjects\sepC++\task0b\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target task0b"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ASUS\CLionProjects\cplusplus\task0b\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target task0b"
 .PHONY : CMakeFiles/task0b.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/task0b.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ASUS\CLionProjects\sepC++\task0b\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ASUS\CLionProjects\cplusplus\task0b\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/task0b.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ASUS\CLionProjects\sepC++\task0b\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ASUS\CLionProjects\cplusplus\task0b\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/task0b.dir/rule
 
 # Convenience name for target.

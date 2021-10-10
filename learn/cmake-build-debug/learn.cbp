@@ -83,6 +83,9 @@
 		<Unit filename="C:/Users/ASUS/CLionProjects/cplusplus/learn/main.cpp">
 			<Option target="learn"/>
 		</Unit>
+		<Unit filename="C:/Users/ASUS/CLionProjects/cplusplus/learn/text.txt">
+			<Option target="learn"/>
+		</Unit>
 		<Unit filename="C:/Users/ASUS/CLionProjects/cplusplus/learn/variables.cpp">
 			<Option target="learn"/>
 		</Unit>

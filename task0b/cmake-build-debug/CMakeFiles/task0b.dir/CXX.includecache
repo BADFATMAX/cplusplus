@@ -6,13 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ASUS/CLionProjects/sepC++/task0b/main.cpp
+C:/Users/ASUS/CLionProjects/cplusplus/task0b/main.cpp
 iostream
 -
-string
+fstream
 -
 list
 -
-fstream
+map
+-
+string
+-
+vector
+-
+algorithm
 -
 
