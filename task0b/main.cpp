@@ -3,22 +3,13 @@
 #include <list>
 #include <map>
 #include <string>
-#include <vector>
 #include <algorithm>
-// функция для сортировки
+// функция для сортировки для std::sort
 bool cmp(std::pair<std::string, int> a, std::pair<std::string, int> b) {
     return(a.second > b.second);
 }
 int main(int argc, char** argv) {
     using namespace std;
-    if (argc == 1) {
-        cout << "No args\n";
-        return 1;
-    }
-    if (argc == 2){
-        cout << "No output arg\n";
-        return 1;
-    }
     string file_name = argv[1];
     string out_name = argv[2];
     ifstream in_file;
@@ -53,8 +44,9 @@ int main(int argc, char** argv) {
         }
     }
     in_file.close();
+    //частота употребления слова
     map<string, int> words_freqs;
-    for (; list_of_words.size() !=0; ) {
+    while ( list_of_words.size() !=0 ) {
         string word = list_of_words.front();
         list_of_words.pop_front();
         map<string, int>::iterator it;
@@ -67,17 +59,14 @@ int main(int argc, char** argv) {
         }
     }
     list_of_words.clear();
-    vector<pair<string, int>> vec_words_freqs;
-    for (map<string, int>::iterator it = words_freqs.begin(); it != words_freqs.end(); it++) {
-        vec_words_freqs.push_back(make_pair(it->first, it->second));
-    }
-    words_freqs.clear();
-    std::sort(vec_words_freqs.begin(), vec_words_freqs.end(), cmp);
+    //сортировка
+    std::sort(words_freqs.begin(), words_freqs.end(), cmp);
+    //вывод
     ofstream out_file;
     out_file.open(out_name);
-    for (vector<pair<string, int>>::iterator it = vec_words_freqs.begin(); it != vec_words_freqs.end(); it++) {
+    for (map<string, int>::iterator it = words_freqs.begin(); it != words_freqs.end(); it++) {
+        //вывод процентов
         double percent = ((double)it->second / (double)cnt_words * 100.0);
-        cout.precision(3);
-        out_file << it->first <<',' << it->second << ',' << percent <<'%'<<'\n' ;
+        out_file << it->first <<", " << it->second << ", " << percent <<'%'<<'\n' ;
     }
 }
