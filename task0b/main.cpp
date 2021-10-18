@@ -4,6 +4,7 @@
 #include <map>
 #include <string>
 #include <algorithm>
+#include <vector>
 // функция для сортировки для std::sort
 bool cmp(std::pair<std::string, int> a, std::pair<std::string, int> b) {
     return(a.second > b.second);
@@ -59,14 +60,17 @@ int main(int argc, char** argv) {
         }
     }
     list_of_words.clear();
-    //сортировка
-    std::sort(words_freqs.begin(), words_freqs.end(), cmp);
-    //вывод
-    ofstream out_file;
-    out_file.open(out_name);
+    vector<pair<string, int>> vec_words_freqs;
     for (map<string, int>::iterator it = words_freqs.begin(); it != words_freqs.end(); it++) {
-        //вывод процентов
+        vec_words_freqs.push_back(make_pair(it->first, it->second));
+    }
+    words_freqs.clear();
+    std::sort(vec_words_freqs.begin(), vec_words_freqs.end(), cmp);
+    ofstream out_file;
+    out_file.open(file_name + ".csv");
+    for (vector<pair<string, int>>::iterator it = vec_words_freqs.begin(); it != vec_words_freqs.end(); it++) {
         double percent = ((double)it->second / (double)cnt_words * 100.0);
-        out_file << it->first <<", " << it->second << ", " << percent <<'%'<<'\n' ;
+        cout.precision(3);
+        out_file << it->first << ',' << it->second << ',' << percent <<'%'<<'\n' ;
     }
 }
