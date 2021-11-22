@@ -5,6 +5,8 @@
 #include<list>
 #include <iostream>
 #define LOAD_FACTOR 0.7
+#define DEFAULT_HT_VAl1 6
+#define DEFAULT_HT_VAL2 9
 struct Student {
     unsigned age;
     unsigned weight;

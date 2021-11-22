@@ -29,7 +29,6 @@ bool HashTable::rehash() {
         re.insert(it.first, it.second);
     }
     *this = re;
-    delete &re;
     tmp.clear();
     return true;
 }
@@ -110,7 +109,6 @@ void HashTable::swap(HashTable &b) {
     HashTable tmp(*this);
     *this = b;
     b = tmp;
-    delete &tmp;
 }
 
 void HashTable::clear() {
@@ -173,7 +171,7 @@ Value  &HashTable::operator[](const Key &k) {
         return this->at(k);
     } else
     {
-        this->insert(k, {0 , 0});
+        this->insert(k, {DEFAULT_HT_VAl1, DEFAULT_HT_VAL2});
         std::cout <<"Couldn't find element by key " <<k <<" in hashtable " <<this <<"\nValue is inserted"
                   <<std::flush;
         return this->at(k);
