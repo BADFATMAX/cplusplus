@@ -46,11 +46,13 @@ HashTable::~HashTable(){
 HashTable::HashTable(const HashTable &b) {
     *this = b;
 }
-
-HashTable::HashTable(HashTable &&b)  noexcept {
-    *this = b;
-    delete &b;
+HashTable::HashTable(HashTable &&b) : cap(b.cap), size_prop(b.size_prop),
+                                      data(b.data){
+    b.cap = 0;
+    b.size_prop = 0;
+    b.data.clear();
 }
+
 //оператор присваивания
 HashTable &HashTable::operator=(const HashTable &b) {
     cap = b.cap;
@@ -69,8 +71,14 @@ HashTable &HashTable::operator=(const HashTable &b) {
 }
 //оператор перемещения
 HashTable &HashTable::operator=(HashTable &&b)  noexcept {
-    *this = b;
-    delete &b;
+    if (&b== this)
+        return *this;
+    cap = b.cap;
+    size_prop = b.size_prop;
+    data = b.data;
+    b.cap = 0;
+    b.size_prop = 0;
+    b.data.clear();
     return *this;
 }
 //сравнение таблиц
@@ -240,7 +248,6 @@ bool HashTable::empty() const {
     else
         return false;
 }
-
 void HashTable::get_vals(Datalist& v){
     for(auto lit: data){
         for(auto it = lit.begin(); it != lit.end(); it++){

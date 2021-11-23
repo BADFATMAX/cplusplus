@@ -54,6 +54,11 @@ TEST(FromScratch, op1){
     EXPECT_ANY_THROW(ht.at("none2"));
 }
 
+TEST_F(ReadyHT, cm){
+    auto n = std::move(*htp);
+    EXPECT_FALSE(n.empty());
+    EXPECT_TRUE(htp->empty());
+}
 int main(int argc, char* argv[]){
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

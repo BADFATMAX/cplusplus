@@ -29,7 +29,7 @@ public:
     ~HashTable();
 
     HashTable(const HashTable& b);
-    HashTable(HashTable&& b) noexcept;
+    HashTable(HashTable&& b);
 
 
     HashTable& operator=(const HashTable& b);
