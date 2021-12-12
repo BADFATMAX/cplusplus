@@ -1,0 +1,7 @@
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/cmake-build-debug/CMakeFiles/cfg.dir
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/cmake-build-debug/CMakeFiles/ws.dir
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/cmake-build-debug/CMakeFiles/wf.dir
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/cmake-build-debug/CMakeFiles/bs.dir
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/cmake-build-debug/CMakeFiles/task3.dir

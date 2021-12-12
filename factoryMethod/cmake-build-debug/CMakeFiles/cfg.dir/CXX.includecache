@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/workflow/configuration/Config.cpp
+Config.h
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/workflow/configuration/Config.h
+
+C:/Users/ASUS/CLionProjects/cplusplus/factoryMethod/workflow/configuration/Config.h
+string
+-
+vector
+-
+list
+-
+fstream
+-
+iostream
+-
+sstream
+-
+

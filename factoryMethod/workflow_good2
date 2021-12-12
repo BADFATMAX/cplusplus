@@ -1,0 +1,9 @@
+desc
+27 = readfile ..\\in_file.txt
+86 = writefile ..\\out_file2.txt
+56 = grep Abstract
+43 = sort
+11 = replace Factory milk
+99 = dump ..\\dump2.txt
+csed
+27 -> 99 -> 43 -> 56 -> 11 -> 43 -> 86
