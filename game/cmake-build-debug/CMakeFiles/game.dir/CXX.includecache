@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ASUS/CLionProjects/cplusplus/game/controller.h
+model.h
+C:/Users/ASUS/CLionProjects/cplusplus/game/model.h
+interface.h
+C:/Users/ASUS/CLionProjects/cplusplus/game/interface.h
+time.h
+C:/Users/ASUS/CLionProjects/cplusplus/game/time.h
+random
+-
+string
+-
+conio.h
+-
+
+C:/Users/ASUS/CLionProjects/cplusplus/game/interface.h
+conio.h
+-
+
+C:/Users/ASUS/CLionProjects/cplusplus/game/main.cpp
+iostream
+-
+controller.h
+C:/Users/ASUS/CLionProjects/cplusplus/game/controller.h
+
+C:/Users/ASUS/CLionProjects/cplusplus/game/model.h
+

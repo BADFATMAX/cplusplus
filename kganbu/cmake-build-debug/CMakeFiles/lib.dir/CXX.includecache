@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/controller.cpp
+controller.h
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/controller.h
+
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/controller.h
+model.h
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/model.h
+interface.h
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/interface.h
+time.h
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/time.h
+random
+-
+string
+-
+conio.h
+-
+
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/interface.cpp
+interface.h
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/interface.h
+
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/interface.h
+conio.h
+-
+iostream
+-
+string
+-
+
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/model.cpp
+model.h
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/model.h
+
+C:/Users/ASUS/CLionProjects/cplusplus/kganbu/model.h
+iostream
+-
+

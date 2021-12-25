@@ -2,7 +2,7 @@
 #include "workflow/benches/benches_std.h"
 int main() {
     auto cfg = new Config;
-    cfg->prepareConfigData("..\\workflow_good");
+    cfg->prepareConfigData("..\\workflow_bad2");
     CreatorsList crts;
     //быстро заполняем список необходимыми creator'ами
     for(int i = 0; i <= 5; i++){
